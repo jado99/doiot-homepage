@@ -1,0 +1,57 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- CCTV 카메라 -->
+  <g transform="translate(50, 40)">
+    <rect width="40" height="30" rx="5" fill="#374151" stroke="#6B7280" stroke-width="2"/>
+    <circle cx="20" cy="15" r="8" fill="#1F2937" stroke="#9CA3AF" stroke-width="1"/>
+    <circle cx="20" cy="15" r="5" fill="#000000"/>
+    <circle cx="20" cy="15" r="2" fill="#FFFFFF"/>
+    <rect x="15" y="25" width="10" height="5" fill="#374151"/>
+  </g>
+  
+  <!-- VSL 표지판 -->
+  <g transform="translate(120, 50)">
+    <rect width="60" height="40" rx="5" fill="#F59E0B" stroke="#D97706" stroke-width="2"/>
+    <text x="30" y="15" text-anchor="middle" fill="#FFFFFF" font-family="Arial" font-size="12" font-weight="bold">VSL</text>
+    <text x="30" y="30" text-anchor="middle" fill="#FFFFFF" font-family="Arial" font-size="10">모니터링</text>
+  </g>
+  
+  <!-- Edge AI 처리기 -->
+  <g transform="translate(100, 120)">
+    <rect width="80" height="50" rx="8" fill="#3B82F6" stroke="#2563EB" stroke-width="2"/>
+    <text x="40" y="20" text-anchor="middle" fill="#FFFFFF" font-family="Arial" font-size="10" font-weight="bold">EDGE AI</text>
+    <text x="40" y="35" text-anchor="middle" fill="#FFFFFF" font-family="Arial" font-size="8">실시간 분석</text>
+  </g>
+  
+  <!-- 데이터 전송선 -->
+  <path d="M 70 55 L 100 120" stroke="#10B981" stroke-width="2" fill="none" opacity="0.8">
+    <animate attributeName="stroke-dasharray" values="0,50;50,0;0,50" dur="2s" repeatCount="indefinite"/>
+  </path>
+  
+  <path d="M 150 70 L 140 120" stroke="#10B981" stroke-width="2" fill="none" opacity="0.8">
+    <animate attributeName="stroke-dasharray" values="0,50;50,0;0,50" dur="2s" repeatCount="indefinite" begin="0.5s"/>
+  </path>
+  
+  <!-- 분석 결과 표시 -->
+  <g transform="translate(100, 180)">
+    <rect width="100" height="30" rx="5" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="1"/>
+    <text x="50" y="12" text-anchor="middle" fill="#475569" font-family="Arial" font-size="8">상태: 정상</text>
+    <text x="50" y="24" text-anchor="middle" fill="#475569" font-family="Arial" font-size="8">신뢰도: 98%</text>
+  </g>
+  
+  <!-- AI 신경망 패턴 -->
+  <g opacity="0.4" transform="translate(100, 120)">
+    <circle cx="-20" cy="-10" r="3" fill="#8B5CF6"/>
+    <circle cx="20" cy="-10" r="3" fill="#8B5CF6"/>
+    <circle cx="0" cy="10" r="3" fill="#8B5CF6"/>
+    <line x1="-20" y1="-10" x2="0" y2="10" stroke="#8B5CF6" stroke-width="1"/>
+    <line x1="20" y1="-10" x2="0" y2="10" stroke="#8B5CF6" stroke-width="1"/>
+  </g>
+  
+  <!-- 실시간 처리 표시 -->
+  <g transform="translate(30, 160)">
+    <circle cx="0" cy="0" r="8" fill="#EF4444" opacity="0.8">
+      <animate attributeName="opacity" values="0.8;0.3;0.8" dur="1s" repeatCount="indefinite"/>
+    </circle>
+    <text x="0" y="3" text-anchor="middle" fill="#FFFFFF" font-family="Arial" font-size="8" font-weight="bold">실시간</text>
+  </g>
+</svg> 
